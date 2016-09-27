@@ -26,19 +26,19 @@ Framework7.prototype.plugins.math = function (app, params) {
                mode: function(numbers){
                 var modes = [],
                 count = [],
-                jemz,
+                wafu,
                 number,
                 maxLength = 0;
-                for (jemz = 0; jemz < numbers.length; jemz += 1) {
-                    number = numbers[jemz];
+                for (wafu = 0; wafu < numbers.length; wafu += 1) {
+                    number = numbers[wafu];
                     count[number] = (count[number] || 0) + 1;
                     if (count[number] > maxLength) {
                         maxLength = count[number];
                     }
                 }
-                for (jemz in count) if (count.hasOwnProperty(jemz)) {
-                    if (count[jemz] === maxLength) {
-                        modes.push(Number(jemz));
+                for (wafu in count) if (count.hasOwnProperty(wafu)) {
+                    if (count[wafu] === maxLength) {
+                        modes.push(Number(wafu));
                     }
                 }
                 return modes;
